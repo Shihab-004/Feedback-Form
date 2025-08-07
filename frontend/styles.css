@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  color: #222;
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2, h3 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Input & Textarea */
+input[type="text"],
+textarea {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e0e7ff, #a0b8ff);
+  box-shadow:  5px 5px 10px #9cb7ff,
+              -5px -5px 10px #e7efff;
+  color: #222;
+  resize: vertical;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background: linear-gradient(145deg, #c1d0ff, #8caeff);
+  box-shadow:  5px 5px 15px #7999ff,
+              -5px -5px 15px #c9d3ff;
+}
+
+/* Button */
+button {
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(45deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 15px rgba(38, 63, 151, 0.5);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb);
+  transform: scale(1.08);
+  box-shadow: 0 12px 20px rgba(38, 63, 151, 0.8);
+}
+
+/* Feedback list */
+ul#feedbackList {
+  list-style: none;
+  margin-top: 30px;
+  padding-left: 0;
+  max-height: 320px;
+  overflow-y: auto;
+  background: linear-gradient(145deg, #d4e0ff, #a3baff);
+  border-radius: 12px;
+  box-shadow: inset 5px 5px 10px #8eaaff,
+              inset -5px -5px 10px #e0e9ff;
+  scrollbar-width: thin;
+  scrollbar-color: #6a11cb #a3baff;
+}
+
+/* Scrollbar for webkit */
+ul#feedbackList::-webkit-scrollbar {
+  width: 7px;
+}
+ul#feedbackList::-webkit-scrollbar-track {
+  background: #a3baff;
+  border-radius: 10px;
+}
+ul#feedbackList::-webkit-scrollbar-thumb {
+  background: #6a11cb;
+  border-radius: 10px;
+}
+
+/* Each feedback item */
+ul#feedbackList li {
+  background: linear-gradient(145deg, #f0f4ff, #cad8ff);
+  margin: 10px 15px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  box-shadow:  5px 5px 8px #a3b6ff,
+              -5px -5px 8px #e4ecff;
+  font-size: 16px;
+  font-weight: 500;
+  color: #222;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+  cursor: default;
+}
+
+ul#feedbackList li:hover {
+  background: linear-gradient(145deg, #b5c8ff, #7e9eff);
+  box-shadow:  8px 8px 12px #7d92ff,
+              -8px -8px 12px #c1d1ff;
+}
